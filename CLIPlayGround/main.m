@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
             data=[Fetcher FetchData:dlurl];
           if(dlurl!=nil&&[[NSString stringWithContentsOfURL:dlurl encoding:NSUTF8StringEncoding error:nil] containsString:@"<!DOCTYPE"]==false){
                 NSLog(@"1400*1400 Found");
+              NSLog(@"Download URL Is :%@",dlurl);
                            NSString* writepath=[NSString stringWithFormat:@"%@/%@%@",outpath,ALBUMNAME,filetype];
                 [data writeToFile:writepath atomically:YES];
                        NSLog(@"Finished");
@@ -69,6 +70,7 @@ int main(int argc, const char * argv[]) {
             data=[Fetcher FetchData:dlurl];
    if(dlurl!=nil&&[[NSString stringWithContentsOfURL:dlurl encoding:NSUTF8StringEncoding error:nil] containsString:@"<!DOCTYPE"]==false){
                 NSLog(@"1200*1200 Found");
+             NSLog(@"Download URL Is :%@",dlurl);
                 NSString* writepath=[NSString stringWithFormat:@"%@/%@%@",outpath,ALBUMNAME,filetype];
                 [data writeToFile:writepath atomically:YES];
                 NSLog(@"Finished");
@@ -83,6 +85,7 @@ int main(int argc, const char * argv[]) {
             data=[Fetcher FetchData:dlurl];
             if(dlurl!=nil&&[[NSString stringWithContentsOfURL:dlurl encoding:NSUTF8StringEncoding error:nil] containsString:@"<!DOCTYPE"]==false){
                 NSLog(@"800*800 Found");
+                      NSLog(@"Download URL Is :%@",dlurl);
     NSString* writepath=[NSString stringWithFormat:@"%@/%@%@",outpath,ALBUMNAME,filetype];
                 [data writeToFile:writepath atomically:YES];
                 NSLog(@"Finished");
@@ -98,6 +101,7 @@ int main(int argc, const char * argv[]) {
             data=[Fetcher FetchData:dlurl];
      if(dlurl!=nil&&[[NSString stringWithContentsOfURL:dlurl encoding:NSUTF8StringEncoding error:nil] containsString:@"<!DOCTYPE"]==false){
                 NSLog(@"600*600 Found");
+               NSLog(@"Download URL Is :%@",dlurl);
                              NSString* writepath=[NSString stringWithFormat:@"%@/%@%@",outpath,ALBUMNAME,filetype];
                 [data writeToFile:writepath atomically:YES];
                 NSLog(@"Finished");
